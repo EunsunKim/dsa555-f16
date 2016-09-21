@@ -31,16 +31,16 @@ int main(int argc, char* argv[]){
         if(isGood){
             cout << "fact() is working properly" << endl;
             for(int i=0;i<31 && isGood;i++){
-                if(power(2,i)!=pow(2,i)){
-                    cout << "bug in your pow() function." << endl;
-                    cout << "pow(2," << i << ") should return " << power(2,i) << endl;
-                    cout << "Your function returned: " << pow(2,i) << endl;
+                if(power(2,i)!=powR(2,i)){
+                    cout << "bug in your powR() function." << endl;
+                    cout << "powR(2," << i << ") should return " << power(2,i) << endl;
+                    cout << "Your function returned: " << powR(2,i) << endl;
                     isGood = false;
                 }
             }
         }
         if(isGood){
-            cout << "pow() is working properly" << endl;
+            cout << "powR() is working properly" << endl;
             for(int i=0;i<30 && isGood;i++){
                 if(fibonacci(i)!=fib(i)){
                     cout << "bug in your fib function." << endl;
