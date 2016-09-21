@@ -1,10 +1,9 @@
 /*Lab 2 tester
 To compile:
-g++ lab2.cpp lab2tester.cpp timer.cpp -std=c++11
+g++ lab2.cpp lab2tester.cpp -std=c++11
 */
 #include <iostream>
 #include <cstdlib>
-#include "timer.h"
 using namespace std;
 
 unsigned int factorial(unsigned int n);
@@ -51,18 +50,7 @@ int main(int argc, char* argv[]){
             }
 
         }
-        if(isGood){
-            cout << "fib() is working properly" << endl;
-            unsigned int n=10;
-            if(argc == 2){
-                n=atoi(argv[1]);
-            }
-            Timer t;
-            t.start();
-            fib(n);
-            t.stop();
-            cout << "fib("<< n << ") took " <<  t.currtime() << " s" << endl;
-        }
+
 
     }
     return 0;
