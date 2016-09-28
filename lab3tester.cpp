@@ -1,9 +1,9 @@
 #include "dlist.h"
 int main(void){
 	DList<int> list;
-	SList<int> list2;
+
 	list.push_front(10);
-	list.print();    //15
+	list.print();    //10
 	cout << "*****1******" << endl;
 	list.push_front(5);
 	list.push_front(15);
