@@ -38,15 +38,31 @@ public:
 	void pop_front();
 	void pop_back(){
 		//check if list is empty
-		if(){
-			//unlink last data node 
+		//front sentinel's next does not point at back
+		//sentinel, list is not empty
+		if(head_->next_!=tail_){
+			//this is the node we want to remove
+			Node* last=tail_->prev_; 
+
+			//this is the node before the one we want to remove
+			Node* secondLast=last->prev_;
+
+			//unlink last data node
+			tail_->prev_= secondLast;
+			secondLast->next_= tail_; //secondLast->next_=last->next_ is also ok
+
 			//delete last data node
+			delete last;
 		}
 
 
 	}
 	void print() const{
-
+		Node* it=head_->next_;
+		while(it!=tail_){
+			cout << it->data_ << endl;
+			it=it->next_;
+		}
 	}
 };
 
