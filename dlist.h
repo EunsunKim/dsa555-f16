@@ -31,8 +31,12 @@ public:
 		head_=nn;
 		
 	}
-	void push_back(const T& data);
-	void pop_front();
+	void push_back(const T& data){
+		
+	}
+	void pop_front(){
+
+	}
 	void pop_back(){
 		//if list is not empty
 		if(head_){
