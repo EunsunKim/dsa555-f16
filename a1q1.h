@@ -75,12 +75,10 @@ public:
 	void insert(const T& data){
 
 	}
-	void remove(const T& data){
+	void erase(iterator it){
 
 	}
-	const_iterator search(const T& key){
 
-	}
 	iterator search(const T& key){
 
 	}
