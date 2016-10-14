@@ -94,3 +94,18 @@ void Maze::print() const{
 		cout << endl;
 	}
 }
+
+bool operator==(const Coord& left, const Coord& right){
+	bool rc=false;
+	if(left.x==right.x && left.y==right.y){
+		rc=true;
+	}
+	return rc;
+}
+bool operator!=(const Coord& left, const Coord& right){
+	bool rc=false;
+	if(left.x!=right.x || left.y!=right.y){
+		rc=true;
+	}
+	return rc;
+}
